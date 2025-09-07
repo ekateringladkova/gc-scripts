@@ -1,36 +1,28 @@
-// app.js — рендер календаря на страницу GetCourse из внешнего скрипта
+// app.js — календарь как внешний скрипт
 (function () {
-  // 0) Куда монтировать: если есть <div id="gc-widget"></div> — вставим туда; иначе в конец body
-  function getMount() {
+  // Куда монтировать (если есть <div id="gc-widget"> — вставим туда; иначе в конец body)
+  function getMountPoint() {
     return document.querySelector('#gc-widget') || document.body;
   }
 
-  // 1) Вставляем HTML в DOM (твоя разметка из вопроса)
-  const html = `
-  <div class="calendar-wrapper">
-    <div class="cal-header">
-      <button onclick="prevMonth()" class="cal-arrow">&#9668;</button>
-      <h2 id="month-year" class="cal"></h2>
-      <button onclick="nextMonth()" class="cal-arrow">&#9658;</button>
+  // Разметка календаря (твоя HTML-структура)
+  const markup = `
+    <div class="calendar-wrapper">
+      <div class="cal-header">
+        <button onclick="prevMonth()" class="cal-arrow">&#9668;</button>
+        <h2 id="month-year" class="cal"></h2>
+        <button onclick="nextMonth()" class="cal-arrow">&#9658;</button>
+      </div>
+      <div class="calendar" id="calendar"></div>
+      <div id="event-info">
+        <button class="close-btn" onclick="closeEventInfo()">×</button>
+        <div id="event-details"></div>
+      </div>
+      <ul id="events-list" class="events-list"></ul>
     </div>
-    <div class="calendar" id="calendar"></div>
-    <div id="event-info">
-      <button class="close-btn" onclick="closeEventInfo()">×</button>
-      <div id="event-details"></div>
-    </div>
-    <ul id="events-list" class="events-list"></ul>
-  </div>
   `;
 
-  function mount() {
-    const mountPoint = getMount();
-    // чтобы не дублировать при повторной инициализации:
-    if (!document.getElementById('month-year')) {
-      mountPoint.insertAdjacentHTML('beforeend', html);
-    }
-  }
-
-  // 2) ДАННЫЕ событий (твои)
+  // События (твой объект как есть)
   const events = {
     "2025-2-28":[{"type":"Прямой эфир","text":"Моделирование тюльпана в SpeedTree","time":"16:00","description":"Александр Абрамов. Прямой эфир проходит в Telegram-чате клуба","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
     "2025-3-5":[{"type":"Конкурс","text":"Окнончание приёма работ на конкурс «Букет к 8 марта»","time":"23:59","description":"Приём работ ведется через Бот поддержки!","link":"https://t.me/happy3d_bot","link_text":"Перейти в Бот поддержки"}],
@@ -64,16 +56,15 @@
     "2025-9-26":[{"type":"Прямой эфир","text":"Прямой эфир с Екатериной Гладковой","time":"19:00","description":"Rail Clone","link":"","link_text":"VK Видео"}]
   };
 
-  // 3) ЛОГИКА календаря (твоя, с минимальными доп. правками)
+  // Состояние
   let currentDate = new Date();
   let selectedDay = null;
 
+  // Рендер календаря
   function renderCalendar() {
     const monthYear = document.getElementById("month-year");
     const calendar = document.getElementById("calendar");
-    const eventsList = document.getElementById("events-list");
-
-    if (!monthYear || !calendar || !eventsList) return; // если DOM ещё не вставился
+    if (!monthYear || !calendar) return;
 
     let monthYearText = currentDate.toLocaleString('ru-RU', { month: 'long', year: 'numeric' });
     monthYearText = monthYearText.charAt(0).toUpperCase() + monthYearText.slice(1);
@@ -90,12 +81,12 @@
     });
 
     const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
-    const adjustedFirstDay = firstDay === 0 ? 6 : firstDay - 1; // сдвиг на понедельник
+    const adjustedFirstDay = firstDay === 0 ? 6 : firstDay - 1; // понедельник — начало недели
     const daysInMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
     const prevMonthDays = new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
     const nextMonthDays = 42 - (adjustedFirstDay + daysInMonth);
 
-    // предыдущий месяц
+    // Дни предыдущего месяца
     for (let i = adjustedFirstDay - 1; i >= 0; i--) {
       const dayDiv = document.createElement("div");
       dayDiv.classList.add("day", "outside-month");
@@ -103,7 +94,7 @@
       calendar.appendChild(dayDiv);
     }
 
-    // текущий месяц
+    // Дни текущего месяца
     for (let day = 1; day <= daysInMonth; day++) {
       const dayDiv = document.createElement("div");
       dayDiv.classList.add("day");
@@ -135,6 +126,7 @@
         });
 
         dayDiv.appendChild(eventDots);
+
         dayDiv.addEventListener("click", (e) => {
           e.stopPropagation();
           toggleSelectDay(dayDiv, eventArray);
@@ -148,7 +140,7 @@
       calendar.appendChild(dayDiv);
     }
 
-    // следующий месяц
+    // Дни следующего месяца
     for (let i = 1; i <= nextMonthDays; i++) {
       const dayDiv = document.createElement("div");
       dayDiv.classList.add("day", "outside-month");
@@ -159,11 +151,12 @@
     renderUpcomingEvents();
   }
 
+  // Список ближайших событий (30 дней)
   function renderUpcomingEvents() {
     const eventsList = document.getElementById("events-list");
     if (!eventsList) return;
 
-    const upcomingEvents = [];
+    const upcoming = [];
     const today = new Date();
 
     for (let i = 0; i < 30; i++) {
@@ -172,18 +165,18 @@
 
       const key = `${futureDate.getFullYear()}-${futureDate.getMonth() + 1}-${futureDate.getDate()}`;
       if (events[key]) {
-        events[key].forEach(event => {
-          upcomingEvents.push({
+        events[key].forEach(ev => {
+          upcoming.push({
             date: futureDate,
-            text: event.text,
-            type: event.type,
-            time: event.time
+            text: ev.text,
+            type: ev.type,
+            time: ev.time
           });
         });
       }
     }
 
-    const grouped = upcomingEvents.reduce((acc, ev) => {
+    const grouped = upcoming.reduce((acc, ev) => {
       const dateStr = ev.date.toLocaleDateString('ru-RU');
       (acc[dateStr] = acc[dateStr] || []).push(ev);
       return acc;
@@ -207,17 +200,18 @@
     });
   }
 
+  // Выбор дня и показ карточек событий
   function toggleSelectDay(dayDiv, eventArray) {
     const eventInfo = document.getElementById("event-info");
     if (!eventInfo) return;
 
-    if (window._selectedDay === dayDiv) {
+    if (selectedDay === dayDiv) {
       dayDiv.classList.remove("selected-day");
       eventInfo.classList.remove("show");
-      window._selectedDay = null;
+      selectedDay = null;
     } else {
-      if (window._selectedDay) window._selectedDay.classList.remove("selected-day");
-      window._selectedDay = dayDiv;
+      if (selectedDay) selectedDay.classList.remove("selected-day");
+      selectedDay = dayDiv;
       dayDiv.classList.add("selected-day");
       showEventInfo(eventArray);
     }
@@ -229,48 +223,55 @@
     if (!eventInfo || !eventDetails) return;
 
     eventDetails.innerHTML = "";
-    eventArray.forEach(event => {
+    eventArray.forEach(ev => {
       eventDetails.innerHTML += `
         <div class="each-cal-event">
           <div class="cal-event-container">
             <div class="cal-event-box">
-              ${event.time ? `<span class="cal-event-time">${event.time}</span>` : ''}
+              ${ev.time ? `<span class="cal-event-time">${ev.time}</span>` : ''}
             </div>
             <div class="cal-event-box">
-              <span class="cal-event-name">${event.text}</span>
-              <p class="cal-event-type">${event.type.charAt(0).toUpperCase() + event.type.slice(1)}</p>
-              <p class="cal-event-descrip">${event.description}</p>
-              ${event.link ? `<p class="cal-event-descrip"><a href="${event.link}" target="_blank" rel="noopener noreferrer">${event.link_text}</a></p>` : ''}
+              <span class="cal-event-name">${ev.text}</span>
+              <p class="cal-event-type">${ev.type.charAt(0).toUpperCase() + ev.type.slice(1)}</p>
+              <p class="cal-event-descrip">${ev.description}</p>
+              ${ev.link ? `<p class="cal-event-descrip"><a href="${ev.link}" target="_blank" rel="noopener noreferrer">${ev.link_text}</a></p>` : ''}
             </div>
           </div>
         </div>
       `;
     });
+
     eventInfo.classList.add("show");
   }
 
-  // 4) Глобальные обработчики для inline onclick (важно!)
+  // Глобальные функции для inline onclick
   window.prevMonth = function () {
     currentDate.setMonth(currentDate.getMonth() - 1);
     renderCalendar();
   };
+
   window.nextMonth = function () {
     currentDate.setMonth(currentDate.getMonth() + 1);
     renderCalendar();
   };
+
   window.closeEventInfo = function () {
     const eventInfo = document.getElementById("event-info");
     if (eventInfo) eventInfo.classList.remove("show");
-    if (window._selectedDay) {
-      window._selectedDay.classList.remove("selected-day");
-      window._selectedDay = null;
+    if (selectedDay) {
+      selectedDay.classList.remove("selected-day");
+      selectedDay = null;
     }
   };
 
-  // 5) Инициализация
+  // Монтирование и первый рендер
   function init() {
-    mount();
+    // вставим разметку один раз
+    if (!document.getElementById('month-year')) {
+      getMountPoint().insertAdjacentHTML('beforeend', markup);
+    }
     renderCalendar();
+    console.log('Внешний JS работает ✔');
   }
 
   if (document.readyState === 'loading') {
@@ -279,14 +280,12 @@
     init();
   }
 
-  // 6) Подстраховка для динамической смены контента на GetCourse
+  // На случай, если GC перерисует контент без перезагрузки
   let to;
   new MutationObserver(() => {
     clearTimeout(to);
     to = setTimeout(() => {
-      if (!document.getElementById('month-year')) {
-        init();
-      }
+      if (!document.getElementById('month-year')) init();
     }, 150);
   }).observe(document.body, { childList: true, subtree: true });
 })();
