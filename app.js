@@ -60,8 +60,8 @@
     "2025-8-24":[{"type":"Прямой эфир","text":"Прямой эфир с Кириллом Воиновым","time":"13:00","description":"Основы Zbrush","link":"https://vk.com/video-42798791_456239545?list=ln-uGSSCSdfsj70G4eBTv","link_text":"VK Видео"}],
     "2025-8-29":[{"type":"Прямой эфир","text":"Прямой эфир с Александром Поспеловым","time":"16:00","description":"Геометрические ноды в Blender - процедурное кашпо","link":"https://vk.com/video-42798791_456239542?list=ln-WquqaTbuaPZLOe4NVO","link_text":"VK Видео"}],
     "2025-9-12":[{"type":"Прямой эфир","text":"Прямой эфир с Евгением Носиком","time":"19:00","description":"Моделирование дивана Lowell в Marvelous Designer","link":"https://vk.com/video-42798791_456239549?list=ln-VQcDkNG4zlv73a2yw8","link_text":"VK Видео"}],
-    "2025-9-19":[{"type":"Прямой эфир","text":"Прямой эфир с Андреем Фроловым","time":"19:00","description":"Substance Designer","link":"","link_text":"VK Видео"}],
-    "2025-9-26":[{"type":"Прямой эфир","text":"Прямой эфир с Екатериной Гладковой","time":"19:00","description":"Rail Clone","link":"","link_text":"VK Видео"}]
+    "2025-9-26":[{"type":"Прямой эфир","text":"Прямой эфир с Андреем Фроловым","time":"19:00","description":"Substance Designer","link":"","link_text":"VK Видео"}],
+    "2025-9-19":[{"type":"Прямой эфир","text":"Прямой эфир с Екатериной Гладковой","time":"19:00","description":"Rail Clone","link":"","link_text":"VK Видео"}]
   };
 
   // 3) ЛОГИКА календаря (твоя, с минимальными доп. правками)
