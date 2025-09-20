@@ -1,11 +1,18 @@
-   // Формируем шапку урока 
-   let $breadcrumb = $('.gc-main-content > .container > .standard-page-content > .breadcrumb');
-   let $breadcrumbs = $('.gc-main-content > .page-full-block > .main-page-block > .container > .breadcrumbs');
-   $breadcrumbs.find('a').wrap('<li />').parent().after(document.createTextNode(" "));
-   $breadcrumbs.contents().filter(function() {
-     return this.nodeType == 3; //Node.TEXT_NODE
-   }).remove();
-   $breadcrumbs.find('li').after(document.createTextNode(" "));
-   $breadcrumbs.replaceWith('<ul class="breadcrumb">' + $breadcrumbs.html() +'</ul>');
-   $breadcrumbs = $('.gc-main-content > .page-full-block > .main-page-block > .container > .breadcrumb'); 
-   $breadcrumb.add($breadcrumbs).wrapAll('<div class="header-box" />');
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Ищем все div с указанными классами
+  let blocks = document.querySelectorAll(
+    ".lite-block-live-wrapper.o-lt-lesson.o-lt-lesson-feedback-block"
+  );
+
+  blocks.forEach(function(block) {
+    // Создаём элемент для вставки
+    let note = document.createElement("div");
+    note.textContent = "Hello, button";
+    note.style.fontWeight = "bold"; // пример стиля (можно убрать/заменить)
+
+    // Вставляем перед найденным div
+    block.parentNode.insertBefore(note, block);
+  });
+});
+</script>
