@@ -1,4 +1,3 @@
-<script>
 document.addEventListener("DOMContentLoaded", function() {
   // Ищем все div с указанными классами
   let blocks = document.querySelectorAll(
@@ -15,4 +14,4 @@ document.addEventListener("DOMContentLoaded", function() {
     block.parentNode.insertBefore(note, block);
   });
 });
-</script>
+
