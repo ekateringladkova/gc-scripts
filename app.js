@@ -32,36 +32,278 @@
 
   // 2) ДАННЫЕ событий (твои)
   const events = {
-    "2025-2-28":[{"type":"Прямой эфир","text":"Моделирование тюльпана в SpeedTree","time":"16:00","description":"Александр Абрамов. Прямой эфир проходит в Telegram-чате клуба","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
-    "2025-3-5":[{"type":"Конкурс","text":"Окнончание приёма работ на конкурс «Букет к 8 марта»","time":"23:59","description":"Приём работ ведется через Бот поддержки!","link":"https://t.me/happy3d_bot","link_text":"Перейти в Бот поддержки"}],
-    "2025-3-6":[{"type":"Конкурс","text":"Голосование по конкурсу «Букет к 8 марта»","time":"10:00","description":"Конкурс не состоялся","link":"","link_text":""}],
-    "2025-3-7":[{"type":"Прямой эфир","text":"Прямой эфир","time":"","description":"Прямой эфир отменён, встречаемся 14 марта!","link":"","link_text":""}],
-    "2025-3-14":[{"type":"Прямой эфир","text":"Ошибки при настройке материалов Corona Legacy/Physical","time":"16:00","description":"Екатерина Гладкова<br>Для разбора работы в прямом эфире, присылайте ссылку на архив в Бот поддержки с пометкой «На эфир».<br>Прямой эфир будет проходить в Telegram-чате Клуба.","link":"","link_text":""}],
-    "2025-3-21":[{"type":"Прямой эфир","text":"Прямой эфир с Александром Поспеловым","time":"16:00","description":"Тема: Использование нейросетей в моделировании","link":"","link_text":""}],
-    "2025-3-28":[{"type":"Прямой эфир","text":"Прямой эфир с Радмиром Аминевым","time":"19:00","description":"Substance 3D Painter","link":"","link_text":""}],
-    "2025-4-4":[{"type":"Прямой эфир","text":"Прямой эфир с Андреем Фроловым","time":"19:00","description":"Создание мрамора в Substance 3D Designer - часть 1","link":"https://t.me/c/1971553732/42507","link_text":"Ссылка на стрим"}],
-    "2025-4-11":[{"type":"Прямой эфир","text":"Прямой эфир с Евгением Носиком","time":"19:00","description":"Создание реалистичного полотенца от А до Я - часть 1","link":"https://t.me/c/1971553732/42922","link_text":"Ссылка на стрим"}],
-    "2025-4-18":[{"type":"Прямой эфир","text":"Прямой эфир с Екатериной Гладковой","time":"19:00","description":"Конвертация материалов между Legacy и Physical","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
-    "2025-4-25":[{"type":"Прямой эфир","text":"Прямой эфир с Александром Абрамовым ","time":"19:00","description":"Создание подсолнуха в Speed Tree","link":"https://t.me/c/1971553732/43577","link_text":"Запись стрима"}],
-    "2025-5-9":[{"type":"Объявление","text":"С днём Победы!","time":"","description":"На этой неделе стрима не будет. Желаем отличных майских праздников!","link":"","link_text":""}],
-    "2025-5-16":[{"type":"Прямой эфир","text":"Прямой эфир с Евгением Носиком","time":"16:00","description":"Создание реалистичного полотенца от А до Я - часть 2","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
-    "2025-5-23":[{"type":"Прямой эфир","text":"Прямой эфир с Андреем Фроловым","time":"19:00","description":"Создание мрамора в Substance 3D Designer - часть 2","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
-    "2025-5-30":[{"type":"Прямой эфир","text":"Прямой эфир с Радмиром Аминевым","time":"16:00","description":"Моделирование спортивных товаров","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
-    "2025-6-6":[{"type":"Прямой эфир","text":"Прямой эфир с Екатериной Гладковой","time":"19:00","description":"PhysX симуляция падения объектов в TyFlow","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
-    "2025-6-13":[{"type":"Объявление","text":"С днём России!","time":"","description":"На этой неделе стрима не будет. Желаем хороших выходных!","link":"","link_text":""}],
-    "2025-6-20":[{"type":"Прямой эфир","text":"Прямой эфир с Евгением Носиком","time":"16:00","description":"Моделирование обуви в Marvelous Designer","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
-    "2025-6-27":[{"type":"Прямой эфир","text":"Прямой эфир с Радмиром Аминевым","time":"16:00","description":"Моделирование спортивных товаров - часть 2","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
-    "2025-7-4":[{"type":"Прямой эфир","text":"Прямой эфир с Екатериной Гладковой","time":"19:00","description":"Голографические, радужные и перламутровые материалы в Chaos Corona","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
-    "2025-7-11":[{"type":"Прямой эфир","text":"Прямой эфир с Андреем Фроловым","time":"19:00","description":"Dirt-карты в Substance Designer","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
-    "2025-7-18":[{"type":"Прямой эфир","text":"Прямой эфир с Андреем Фроловым","time":"19:00","description":"Материал бетонной стены в Substance Designer","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
-    "2025-7-25":[{"type":"Прямой эфир","text":"Прямой эфир с Радмиром Аминевым","time":"16:00","description":"Моделирование для стока","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
-    "2025-8-1":[{"type":"Прямой эфир","text":"Прямой эфир с Евгением Носиком","time":"16:00","description":"Моделирование обуви в Marvelous Designer - часть 2","link":"https://t.me/+IFvqrBU-nkg1OWIy","link_text":"Telegram"}],
-    "2025-8-15":[{"type":"Прямой эфир","text":"Прямой эфир с Екатериной Гладковой","time":"19:00","description":"CoronaTileMap","link":"https://vk.com/video-42798791_456239544?list=ln-ZCbLxOLip2PLbxLV2Y","link_text":"VK Видео"}],
-    "2025-8-24":[{"type":"Прямой эфир","text":"Прямой эфир с Кириллом Воиновым","time":"13:00","description":"Основы Zbrush","link":"https://vk.com/video-42798791_456239545?list=ln-uGSSCSdfsj70G4eBTv","link_text":"VK Видео"}],
-    "2025-8-29":[{"type":"Прямой эфир","text":"Прямой эфир с Александром Поспеловым","time":"16:00","description":"Геометрические ноды в Blender - процедурное кашпо","link":"https://vk.com/video-42798791_456239542?list=ln-WquqaTbuaPZLOe4NVO","link_text":"VK Видео"}],
-    "2025-9-12":[{"type":"Прямой эфир","text":"Прямой эфир с Евгением Носиком","time":"19:00","description":"Моделирование дивана Lowell в Marvelous Designer","link":"https://vk.com/video-42798791_456239549?list=ln-VQcDkNG4zlv73a2yw8","link_text":"VK Видео"}],
-    "2025-9-26":[{"type":"Прямой эфир","text":"Прямой эфир с Андреем Фроловым","time":"19:00","description":"Адаптивная плитка с дождём и снегом в Substance Designer - часть 1","link":"https://vkvideo.ru/video-42798791_456239558?list=ln-XH3rMOLf9BtCFw5j0I","link_text":"VK Видео"}],
-    "2025-9-19":[{"type":"Прямой эфир","text":"Прямой эфир с Екатериной Гладковой","time":"19:00","description":"Rail Clone","link":"https://vk.com/video-42798791_456239556?list=ln-nmL6KnwhZ60J85OuPJ","link_text":"VK Видео"}]
+      "2025-2-28": [{
+          "type": "Прямой эфир",
+          "text": "Моделирование тюльпана в SpeedTree",
+          "time": "16:00",
+          "description": "Александр Абрамов. Прямой эфир проходит в Telegram-чате клуба",
+          "link": "https://t.me/+IFvqrBU-nkg1OWIy",
+          "link_text": "Telegram"
+      }],
+      "2025-3-5": [{
+          "type": "Конкурс",
+          "text": "Окнончание приёма работ на конкурс «Букет к 8 марта»",
+          "time": "23:59",
+          "description": "Приём работ ведется через Бот поддержки!",
+          "link": "https://t.me/happy3d_bot",
+          "link_text": "Перейти в Бот поддержки"
+      }],
+      "2025-3-6": [{
+          "type": "Конкурс",
+          "text": "Голосование по конкурсу «Букет к 8 марта»",
+          "time": "10:00",
+          "description": "Конкурс не состоялся",
+          "link": "",
+          "link_text": ""
+      }],
+      "2025-3-7": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир",
+          "time": "",
+          "description": "Прямой эфир отменён, встречаемся 14 марта!",
+          "link": "",
+          "link_text": ""
+      }],
+      "2025-3-14": [{
+          "type": "Прямой эфир",
+          "text": "Ошибки при настройке материалов Corona Legacy/Physical",
+          "time": "16:00",
+          "description": "Екатерина Гладкова<br>Для разбора работы в прямом эфире, присылайте ссылку на архив в Бот поддержки с пометкой «На эфир».<br>Прямой эфир будет проходить в Telegram-чате Клуба.",
+          "link": "",
+          "link_text": ""
+      }],
+      "2025-3-21": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Александром Поспеловым",
+          "time": "16:00",
+          "description": "Тема: Использование нейросетей в моделировании",
+          "link": "",
+          "link_text": ""
+      }],
+      "2025-3-28": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Радмиром Аминевым",
+          "time": "19:00",
+          "description": "Substance 3D Painter",
+          "link": "",
+          "link_text": ""
+      }],
+      "2025-4-4": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Андреем Фроловым",
+          "time": "19:00",
+          "description": "Создание мрамора в Substance 3D Designer - часть 1",
+          "link": "https://t.me/c/1971553732/42507",
+          "link_text": "Ссылка на стрим"
+      }],
+      "2025-4-11": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Евгением Носиком",
+          "time": "19:00",
+          "description": "Создание реалистичного полотенца от А до Я - часть 1",
+          "link": "https://t.me/c/1971553732/42922",
+          "link_text": "Ссылка на стрим"
+      }],
+      "2025-4-18": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Екатериной Гладковой",
+          "time": "19:00",
+          "description": "Конвертация материалов между Legacy и Physical",
+          "link": "https://t.me/+IFvqrBU-nkg1OWIy",
+          "link_text": "Telegram"
+      }],
+      "2025-4-25": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Александром Абрамовым ",
+          "time": "19:00",
+          "description": "Создание подсолнуха в Speed Tree",
+          "link": "https://t.me/c/1971553732/43577",
+          "link_text": "Запись стрима"
+      }],
+      "2025-5-9": [{
+          "type": "Объявление",
+          "text": "С днём Победы!",
+          "time": "",
+          "description": "На этой неделе стрима не будет. Желаем отличных майских праздников!",
+          "link": "",
+          "link_text": ""
+      }],
+      "2025-5-16": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Евгением Носиком",
+          "time": "16:00",
+          "description": "Создание реалистичного полотенца от А до Я - часть 2",
+          "link": "https://t.me/+IFvqrBU-nkg1OWIy",
+          "link_text": "Telegram"
+      }],
+      "2025-5-23": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Андреем Фроловым",
+          "time": "19:00",
+          "description": "Создание мрамора в Substance 3D Designer - часть 2",
+          "link": "https://t.me/+IFvqrBU-nkg1OWIy",
+          "link_text": "Telegram"
+      }],
+      "2025-5-30": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Радмиром Аминевым",
+          "time": "16:00",
+          "description": "Моделирование спортивных товаров",
+          "link": "https://t.me/+IFvqrBU-nkg1OWIy",
+          "link_text": "Telegram"
+      }],
+      "2025-6-6": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Екатериной Гладковой",
+          "time": "19:00",
+          "description": "PhysX симуляция падения объектов в TyFlow",
+          "link": "https://t.me/+IFvqrBU-nkg1OWIy",
+          "link_text": "Telegram"
+      }],
+      "2025-6-13": [{
+          "type": "Объявление",
+          "text": "С днём России!",
+          "time": "",
+          "description": "На этой неделе стрима не будет. Желаем хороших выходных!",
+          "link": "",
+          "link_text": ""
+      }],
+      "2025-6-20": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Евгением Носиком",
+          "time": "16:00",
+          "description": "Моделирование обуви в Marvelous Designer",
+          "link": "https://t.me/+IFvqrBU-nkg1OWIy",
+          "link_text": "Telegram"
+      }],
+      "2025-6-27": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Радмиром Аминевым",
+          "time": "16:00",
+          "description": "Моделирование спортивных товаров - часть 2",
+          "link": "https://t.me/+IFvqrBU-nkg1OWIy",
+          "link_text": "Telegram"
+      }],
+      "2025-7-4": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Екатериной Гладковой",
+          "time": "19:00",
+          "description": "Голографические, радужные и перламутровые материалы в Chaos Corona",
+          "link": "https://t.me/+IFvqrBU-nkg1OWIy",
+          "link_text": "Telegram"
+      }],
+      "2025-7-11": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Андреем Фроловым",
+          "time": "19:00",
+          "description": "Dirt-карты в Substance Designer",
+          "link": "https://t.me/+IFvqrBU-nkg1OWIy",
+          "link_text": "Telegram"
+      }],
+      "2025-7-18": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Андреем Фроловым",
+          "time": "19:00",
+          "description": "Материал бетонной стены в Substance Designer",
+          "link": "https://t.me/+IFvqrBU-nkg1OWIy",
+          "link_text": "Telegram"
+      }],
+      "2025-7-25": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Радмиром Аминевым",
+          "time": "16:00",
+          "description": "Моделирование для стока",
+          "link": "https://t.me/+IFvqrBU-nkg1OWIy",
+          "link_text": "Telegram"
+      }],
+      "2025-8-1": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Евгением Носиком",
+          "time": "16:00",
+          "description": "Моделирование обуви в Marvelous Designer - часть 2",
+          "link": "https://t.me/+IFvqrBU-nkg1OWIy",
+          "link_text": "Telegram"
+      }],
+      "2025-8-15": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Екатериной Гладковой",
+          "time": "19:00",
+          "description": "CoronaTileMap",
+          "link": "https://vk.com/video-42798791_456239544?list=ln-ZCbLxOLip2PLbxLV2Y",
+          "link_text": "VK Видео"
+      }],
+      "2025-8-24": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Кириллом Воиновым",
+          "time": "13:00",
+          "description": "Основы Zbrush",
+          "link": "https://vk.com/video-42798791_456239545?list=ln-uGSSCSdfsj70G4eBTv",
+          "link_text": "VK Видео"
+      }],
+      "2025-8-29": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Александром Поспеловым",
+          "time": "16:00",
+          "description": "Геометрические ноды в Blender - процедурное кашпо",
+          "link": "https://vk.com/video-42798791_456239542?list=ln-WquqaTbuaPZLOe4NVO",
+          "link_text": "VK Видео"
+      }],
+      "2025-9-12": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Евгением Носиком",
+          "time": "19:00",
+          "description": "Моделирование дивана Lowell в Marvelous Designer",
+          "link": "https://vk.com/video-42798791_456239549?list=ln-VQcDkNG4zlv73a2yw8",
+          "link_text": "VK Видео"
+      }],
+      "2025-9-26": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Андреем Фроловым",
+          "time": "19:00",
+          "description": "Адаптивная плитка с дождём и снегом в Substance Designer - часть 1",
+          "link": "https://vkvideo.ru/video-42798791_456239558?list=ln-XH3rMOLf9BtCFw5j0I",
+          "link_text": "VK Видео"
+      }],
+      "2025-10-3": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Александром Поспеловым",
+          "time": "16:00",
+          "description": "Геоноды в Blender",
+          "link": "",
+          "link_text": "VK Видео"
+      }],
+      "2025-10-10": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Радмиром Аминевым",
+          "time": "16:00",
+          "description": "Моделирование спортивных товаров",
+          "link": "",
+          "link_text": "VK Видео"
+      }],
+      "2025-10-17": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Екатериной Гладковой",
+          "time": "16:00",
+          "description": "Все про превью для 3DDD",
+          "link": "",
+          "link_text": "VK Видео"
+      }],
+      "2025-10-24": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Евгением Носиком",
+          "time": "19:00",
+          "description": "Моделирование сумки в Marvelous Designer",
+          "link": "",
+          "link_text": "VK Видео"
+      }],
+      "2025-9-26": [{
+          "type": "Прямой эфир",
+          "text": "Прямой эфир с Андреем Фроловым",
+          "time": "19:00",
+          "description": "Адаптивная плитка с дождём и снегом в Substance Designer - часть 2",
+          "link": "https://vkvideo.ru/video-42798791_456239558?list=ln-XH3rMOLf9BtCFw5j0I",
+          "link_text": "VK Видео"
+      }]
   };
 
   // 3) ЛОГИКА календаря (твоя, с минимальными доп. правками)
