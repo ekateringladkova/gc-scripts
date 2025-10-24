@@ -293,8 +293,8 @@
           "text": "Прямой эфир с Евгением Носиком",
           "time": "19:00",
           "description": "Моделирование сумки в Marvelous Designer",
-          "link": "",
-          "link_text": "VK Видео"
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=345144024&editMode=0",
+          "link_text": "Перейти на стрим"
       }],
       "2025-10-31": [{
           "type": "Прямой эфир",
