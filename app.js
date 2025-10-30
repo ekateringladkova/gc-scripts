@@ -298,11 +298,11 @@
       }],
       "2025-10-31": [{
           "type": "Прямой эфир",
-          "text": "Прямой эфир с Андреем Фроловым",
+          "text": "Прямой эфир с Екатериной Гладковой",
           "time": "19:00",
-          "description": "Адаптивная плитка с дождём и снегом в Substance Designer - часть 2",
-          "link": "https://vkvideo.ru/video-42798791_456239558?list=ln-XH3rMOLf9BtCFw5j0I",
-          "link_text": "VK Видео"
+          "description": "Знакомство с ForestPack",
+          "link": "",
+          "link_text": "Перейти на стрим"
       }]
   };
 
