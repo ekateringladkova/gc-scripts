@@ -301,7 +301,7 @@
           "text": "Прямой эфир с Екатериной Гладковой",
           "time": "19:00",
           "description": "Знакомство с ForestPack",
-          "link": "",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=345247229&editMode=0",
           "link_text": "Перейти на стрим"
       }]
   };
