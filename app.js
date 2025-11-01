@@ -304,9 +304,17 @@
           "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=345247229&editMode=0",
           "link_text": "Перейти на стрим"
       }],
-      "2025-10-31": [{
+      "2025-11-4": [{
           "type": "Объявление",
           "text": "С днём народного единства!",
+          "time": "",
+          "description": "",
+          "link": "",
+          "link_text": ""
+      }],
+      "2025-12-31": [{
+          "type": "Объявление",
+          "text": "С Новым годом!",
           "time": "",
           "description": "",
           "link": "",
