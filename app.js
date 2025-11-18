@@ -330,10 +330,10 @@
       }],
           "2025-11-21": [{
           "type": "Прямой эфир",
-          "text": "Геоноды",
+          "text": "Chaos Corona 14",
           "time": "19:00",
-          "description": "с Александром Поспеловым",
-          "link": "",
+          "description": "с Екатериной Гладковой",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=345528554&editMode=0",
           "link_text": "Перейти на стрим"
       }],
           "2025-11-28": [{
