@@ -338,10 +338,10 @@
       }],
           "2025-11-28": [{
           "type": "Прямой эфир",
-          "text": "Marvelous Designer",
+          "text": "Моделирование сумки в Marvelous Designer - часть 2",
           "time": "19:00",
           "description": "с Евгением Носиком",
-          "link": "",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=345653027&editMode=0",
           "link_text": "Перейти на стрим"
       }],
       "2025-12-31": [{
