@@ -355,10 +355,10 @@
       }],
           "2025-12-12": [{
           "type": "Прямой эфир",
-          "text": "Прямой эфир",
-          "time": "19:00",
+          "text": "Развёртка",
+          "time": "16:00",
           "description": "с Радмиром Аминевым",
-          "link": "",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=345897870&editMode=0",
           "link_text": "Перейти на стрим"
       }],
           "2025-12-19": [{
