@@ -353,7 +353,7 @@
           "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=345815476&editMode=0",
           "link_text": "Перейти на стрим"
       }],
-          "2025-12-12": [{
+          "2025-12-13": [{
           "type": "Прямой эфир",
           "text": "Развёртка",
           "time": "16:00",
