@@ -353,20 +353,20 @@
           "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=345815476&editMode=0",
           "link_text": "Перейти на стрим"
       }],
-          "2025-12-14": [{
-          "type": "Прямой эфир",
-          "text": "Развёртка",
-          "time": "16:00",
-          "description": "с Радмиром Аминевым",
-          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=345897870&editMode=0",
+          "2025-12-12": [{
+          "type": "Объявление",
+          "text": "Стрим перенесен",
+          "time": "",
+          "description": "",
+          "link": "",
           "link_text": "Перейти на стрим"
       }],
           "2025-12-19": [{
           "type": "Прямой эфир",
-          "text": "Прямой эфир",
-          "time": "19:00",
-          "description": "с Андреем Фроловым",
-          "link": "",
+          "text": "Развертка",
+          "time": "16:00",
+          "description": "с Радмиром Аминевым",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=345897870&editMode=0",
           "link_text": "Перейти на стрим"
       }],
           "2025-12-26": [{
