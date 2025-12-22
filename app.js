@@ -371,10 +371,10 @@
       }],
           "2025-12-26": [{
           "type": "Прямой эфир",
-          "text": "Прямой эфир",
-          "time": "19:00",
+          "text": "Вода в tyFlow",
+          "time": "16:00",
           "description": "с Екатериной Гладковой",
-          "link": "",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=346103010&editMode=0",
           "link_text": "Перейти на стрим"
       }],
       "2025-12-31": [{
