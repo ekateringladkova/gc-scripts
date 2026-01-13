@@ -385,10 +385,10 @@
           "link": "",
           "link_text": ""
       }],
-      "2026-1-16": [{
+      "2026-1-15": [{
           "type": "Прямой эфир",
           "text": "Моделирование новогоднего декора",
-          "time": "19:00",
+          "time": "18:00",
           "description": "с Александром Поспеловым",
           "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=346339296&editMode=0",
           "link_text": "Перейти на стрим"
