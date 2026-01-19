@@ -392,6 +392,22 @@
           "description": "с Александром Поспеловым",
           "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=346339296&editMode=0",
           "link_text": "Перейти на стрим"
+      }],
+      "2026-1-15": [{
+          "type": "Прямой эфир",
+          "text": "Моделирование",
+          "time": "16:00",
+          "description": "с Радмиром Аминевым",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=346456077&editMode=0",
+          "link_text": "Перейти на стрим"
+      }],
+      "2026-1-15": [{
+          "type": "Прямой эфир",
+          "text": "Substance Designer",
+          "time": "19:00",
+          "description": "с Андреем Фроловым",
+          "link": "",
+          "link_text": "Перейти на стрим"
       }]
   };
 
