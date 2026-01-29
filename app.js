@@ -394,20 +394,20 @@
           "link_text": "Перейти на стрим"
       }],
       "2026-1-23": [{
-          "type": "Прямой эфир",
-          "text": "Моделирование",
-          "time": "16:00",
-          "description": "с Радмиром Аминевым",
-          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=346456077&editMode=0",
-          "link_text": "Перейти на стрим"
+          "type": "Объявление",
+          "text": "Стрим отменен",
+          "time": "",
+          "description": "",
+          "link": "",
+          "link_text": ""
       }],
       "2026-1-30": [{
-          "type": "Прямой эфир",
-          "text": "Substance Designer",
-          "time": "19:00",
-          "description": "с Андреем Фроловым",
+          "type": "Объявление",
+          "text": "Стрим отменен",
+          "time": "",
+          "description": "",
           "link": "",
-          "link_text": "Перейти на стрим"
+          "link_text": ""
       }]
   };
 
