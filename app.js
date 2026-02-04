@@ -408,6 +408,14 @@
           "description": "",
           "link": "",
           "link_text": ""
+      }],
+      "2026-2-6": [{
+          "type": "Прямой эфир",
+          "text": "Ретопология нейросетевой модели",
+          "time": "18:00",
+          "description": "с Александром Поспеловым",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=346456077",
+          "link_text": "Перейти на стрим"
       }]
   };
 
