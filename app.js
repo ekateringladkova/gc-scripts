@@ -416,6 +416,14 @@
           "description": "с Александром Поспеловым",
           "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=346456077",
           "link_text": "Перейти на стрим"
+      }],
+      "2026-2-13": [{
+          "type": "Прямой эфир",
+          "text": "Моделирование Serip Geyser Fontain Oval - часть 1",
+          "time": "18:00",
+          "description": "с Екатериной Гладковой",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=346778393",
+          "link_text": "Перейти на стрим"
       }]
   };
 
