@@ -426,12 +426,12 @@
           "link_text": "Перейти на стрим"
       }],
       "2026-2-20": [{
-          "type": "Прямой эфир",
-          "text": "Моделирование Serip Geyser Fontain Oval - часть 2",
-          "time": "19:00",
-          "description": "с Екатериной Гладковой",
-          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=346911388",
-          "link_text": "Перейти на стрим"
+          "type": "Объявление",
+          "text": "Стрим отменен",
+          "time": "",
+          "description": "",
+          "link": "",
+          "link_text": ""
       }]
   };
 
