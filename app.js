@@ -432,6 +432,14 @@
           "description": "",
           "link": "",
           "link_text": ""
+      }],
+      "2026-2-27": [{
+          "type": "Прямой эфир",
+          "text": "Моделирование халата в Marvelous Designer",
+          "time": "19:00",
+          "description": "с Евгением Носиком",
+          "link": "https://happy3d.ru/teach/control/stream/view/id/871354943",
+          "link_text": "Перейти на стрим"
       }]
   };
 
