@@ -446,7 +446,7 @@
           "text": "Использоване нейросетей в моделировании",
           "time": "19:30",
           "description": "с Екатериной Гладковой",
-          "link": "",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=348497404",
           "link_text": "Перейти на стрим"
       }]
   };
