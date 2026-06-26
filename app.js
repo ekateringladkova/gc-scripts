@@ -448,6 +448,22 @@
           "description": "с Екатериной Гладковой",
           "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=348497404",
           "link_text": "Перейти на стрим"
+      }],
+      "2026-6-12": [{
+          "type": "Прямой эфир",
+          "text": "Симуляция карточного домика в TyFlow",
+          "time": "19:00",
+          "description": "с Екатериной Гладковой",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=348683866",
+          "link_text": "Перейти на стрим"
+      }],
+      "2026-6-26": [{
+          "type": "Прямой эфир",
+          "text": "Моделирование надувного пончика в TyFlow",
+          "time": "19:00",
+          "description": "с Екатериной Гладковой",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=348857728",
+          "link_text": "Перейти на стрим"
       }]
   };
 
