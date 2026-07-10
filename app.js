@@ -465,6 +465,15 @@
           "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=348857728",
           "link_text": "Перейти на стрим"
       }]
+    ,
+      "2026-6-26": [{
+          "type": "Прямой эфир",
+          "text": "Сложный материал металла",
+          "time": "19:00",
+          "description": "с Екатериной Гладковой",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=349031113",
+          "link_text": "Перейти на стрим"
+      }]
   };
 
   // 3) ЛОГИКА календаря (твоя, с минимальными доп. правками)
