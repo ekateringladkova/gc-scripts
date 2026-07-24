@@ -464,14 +464,21 @@
           "description": "с Екатериной Гладковой",
           "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=348857728",
           "link_text": "Перейти на стрим"
-      }]
-    ,
+      }],
       "2026-7-10": [{
           "type": "Прямой эфир",
           "text": "Сложный материал металла",
           "time": "19:00",
           "description": "с Екатериной Гладковой",
           "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=349031113",
+          "link_text": "Перейти на стрим"
+      }],
+      "2026-7-24": [{
+          "type": "Прямой эфир",
+          "text": "Материал LED-экрана в Chaos Corona",
+          "time": "19:00",
+          "description": "с Екатериной Гладковой",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=349197085",
           "link_text": "Перейти на стрим"
       }]
   };
