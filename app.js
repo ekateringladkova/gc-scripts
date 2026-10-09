@@ -481,6 +481,15 @@
           "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=349197085",
           "link_text": "Перейти на стрим"
       }]
+  };,
+      "2026-10-9": [{
+          "type": "Прямой эфир",
+          "text": "Разбор генератора материалов с блестками в Substance Designer",
+          "time": "19:00",
+          "description": "с Екатериной Гладковой",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=350298558",
+          "link_text": "Перейти на стрим"
+      }]
   };
 
   // 3) ЛОГИКА календаря (твоя, с минимальными доп. правками)
