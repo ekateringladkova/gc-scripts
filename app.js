@@ -488,6 +488,14 @@
           "description": "с Екатериной Гладковой",
           "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=350298558",
           "link_text": "Перейти на стрим"
+      }],
+      "2026-10-16": [{
+          "type": "Прямой эфир",
+          "text": "Создание 3D-моделей с помощью Claude",
+          "time": "17:00",
+          "description": "с Александром Поспеловым",
+          "link": "https://happy3d.ru/pl/teach/control/lesson/view?id=350377470",
+          "link_text": "Перейти на стрим"
       }]
   };
 
